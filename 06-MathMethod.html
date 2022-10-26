@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Method</title>
+    <style>
+        button{
+            font-size: large;
+        }
+        h1{
+            font-size: 50px;
+        }
+    </style>
+<script >
+    //abs,floor,ceil,round,random,max,min,
+/*
+    let x=-5;   //-5;
+    console.log(Math.abs(x)); // negative (-5) => positive (+5)
+    console.log(Math.PI);     // 3.141592653589793
+    console.log(Math.PI.toPrecision(2));     // 3.1
+    console.log(Math.PI.toPrecision(3));     // 3.14
+    
+    console.log(Math.PI.toFixed()); // default 3
+    console.log(Math.PI.toFixed(2)); // default 3.14
+
+    console.log(Math.min(10,2,3,4,5,-1));   //-1
+    console.log(Math.max(10,2,3,4,5,-1));   //10
+
+    console.log(Math.sqrt(49));             //7
+    console.log(Math.cbrt(125));        //5
+
+    console.log(Math.floor(1000.99));  //1000
+    console.log(Math.floor(99.99));  //99
+    console.log(Math.ceil(99.01));  //100
+    console.log(Math.ceil(1000.01));   //1001
+
+    Math.round(3.49)   // 3
+    Math.round(3.59)   // 4  
+
+    Math.random()    // 0 - 1
+    Math.round(Math.random()*10)   // 0 - 10
+    Math.round(Math.random()*10)+10   // 10 - 20
+
+   function generateRandomNumber(min,max){
+
+   let otp = Math.round(Math.random()*(max-min))+min  // min=10 ,max= 20
+
+   console.log(otp);
+
+   }
+   */
+    
+//    generateRandomNumber(10,15);
+
+
+
+    // if(){}
+    
+    
+    
+
+</script>
+
+</head>
+<body>
+
+<button onclick="doRollDice(0)">Dice</button> <br><br>
+
+
+<h1>Result : 0</h1>
+    
+</body>
+<script>
+    
+let heading=document.querySelector("h1");
+
+let num;
+  function randomNum(){
+  num=Math.floor(Math.random()*6)+1;
+  return num; 
+  }
+  let currentScore=0;
+
+
+  // let winningScore=10;
+
+  function doRollDice(a){
+
+
+
+    let dice =  randomNum();   //1==1  true // val!=1
+ 
+    if(dice == 1){
+      
+      alert("your Lose....");
+
+      currentScore=0;
+      heading.innerHTML= "Result : 0";
+    }
+
+    else if(currentScore<=20){
+        //  x=x+1;  //x+=1 
+       currentScore = currentScore + dice;  
+        
+   heading.innerHTML= "Result : " + currentScore;
+
+       
+       if(currentScore>=20){
+         alert("Your Won the Game 🎉🎉🎉 , Your Score is : "+currentScore);
+         currentScore=0;
+
+       }
+//    heading.innerHTML= "Result : " + 0;
+
+   }   
+   
+}
+
+  
+</script>
+</html>

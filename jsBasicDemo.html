@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+ // scripting language ,interpreted language (line by line)
+ // dynamic ,js=> weakly type (let x=5) , strongly(int x=8)-->java,C,C++
+ // case sensitive
+
+ // data types => string , integer(number) , boolean , Array , Object , Null , Undefined 
+
+ // variables => var, let ,const 
+ //  var hositing,window obj, funtion scope
+//   const x=5;
+let x;
+//   function demo(){
+
+//        x=3;
+//       console.log("fun+"+x);
+//       if(true){
+//         var y=7;
+//          }    
+// console.log(y);
+
+//   }
+
+  
+//   demo()
+//  console.log(y);
+
+
+  // if(5==5){
+      //     console.log('true...');
+      // }
+      // else{
+      //     console.log("false");
+      // }
+
+      // //TERNARY OPERATOR
+      // let opt= 5==5 ? "condition true":" condition false";
+      // console.log(opt);
+ 
+        // let a=10;
+        // let b=78;
+        
+        // let t1=a>b?a:b;
+        // let t2=a<b?a:b;
+
+        // console.log(t1,t2);
+        
+
+  
+ 
+//////////////////////////////////////////
+// ADD TWO ARRAY 
+
+        let arr2=[1,2,3];  //2,4,6,4,5
+        let arr1=[1,2,3];
+        let total=[];
+  
+        function addTwoArray(arr1,arr2){
+
+        let temp1=arr1.length>arr2.length?arr1:arr2 // large array
+        let temp2=arr1.length<arr2.length?arr1:arr2 // small array
+
+
+        for(let i=0;i<temp2.length;i++){
+            total[i]=temp2[i]+temp1[i]; 
+        }
+        for(let j=temp2.length;j<temp1.length;j++){
+            total[j]=temp1[j];
+        }
+       console.log(total);
+        }
+
+        addTwoArray(arr1,arr2);
+
+        
+
+
+
+
+
+
+
+
+
+
+/*
+        if(arr1.length>arr2.length){
+
+        for(let i=0;i<arr2.length;i++){
+            total[i]=arr2[i]+arr1[i]; 
+        }
+        for(let j=arr2.length;j<arr1.length;j++){
+            total[j]=arr1[j];
+        }
+     }
+    else{
+        for(let i=0;i<arr1.length;i++){
+            total[i]=arr1[i]+arr2[i];
+        }
+          for(let j=total.length;j<arr2.length;j++){
+            total[j]=arr2[j];
+        }
+    } 
+    console.log(total);
+*/
+
+////////////////////////////
+//   DELETE KEY WORD
+
+    // let arr=[1,2,3,4,5];
+    //       console.log(arr,arr.length);
+    //       delete arr[1];
+    //       console.log(arr,arr.length);
+
+
+//     for (var i = 1; i <= 100; i++) {
+// if ( i % 3) {
+// console.log("this number is divisible by 3");
+// } else {
+// console.log(i);
+// }
+// }
+
+
+
+
+        //  javascript chaining methods/////////////
+        /////////////////////
+
+        // let products=[
+        //     {id:1,title:'Android phone',cost:'7500'},
+        //     {id:1,title:'Gaming computer',cost:'90500'},
+        //     {id:1,title:'Headphone',cost:'2500'}
+        // ];
+        
+        // let lowerCost=products.sort((a,b)=>a.cost-b.cost);
+        // console.log(lowerCost[0].cost);
+
+        // // let title=lowerCost.sort((a,b)=>a.title-b.title);
+        // // console.log(title);
+
+        
+        // let title=lowerCost.sort((a,b)=>{
+        //   if(a.title < b.title) return -1;
+
+        //   if(a.title > b.title) return 1;
+        //     return 1;
+        // });
+        // console.log(title)
+
+        // let filter=title.filter((val)=>val.cost<=8000);
+        // console.log(filter);
+
+        // let final=filter.map((val)=>val.title+'-'+val.cost);
+        // console.log(final);
+        
+        ////////////////////////////
+        /////////////////////////////////
+
+
+        
+        // let products=[
+        //     {id:1,title:'Android phone',cost:'7500'},
+        //     {id:1,title:'Gaming computer',cost:'90500'},
+        //     {id:1,title:'Headphone',cost:'2500'}
+        // ];
+        
+        // let final= products.sort((a,b)=>a.cost-b.cost)
+        // .sort((a,b)=>{
+        //   if(a.title < b.title) return -1;
+
+        //   if(a.title > b.title) return 1;
+        //     return 1;
+        // })
+        // .filter((val)=>val.cost<=8000)
+        // .map((val)=>val.title+'-'+val.cost);
+
+        // console.log(final);
+        
+        
+
+    </script>
+</head>
+<body>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let arr = [
+      //   "a",
+      //   "b",
+      //   "c",
+      //   "d",
+      //   "e",
+      //   "a",
+      //   "b",
+      //   "c",
+      //   "d",
+      //   "e",
+      //   "a",
+      //   "b",
+      //   "c",
+      //   "d",
+        
+      // ];
+      // let temp = [];
+      // let total = [];
+      // function chunk(arr1, key) {
+      //   for (let i = 0; i < arr1.length; i++) {
+      //     //temp[i]=arr1[i];
+      //     temp.push(arr1[i]);
+      //     if (temp.length == key) {
+      //       total.push(temp);
+      //       temp = [];
+      //     }
+      //   }
+      //   if (arr.length % key != 0) {
+      //     total.push(arr.slice(total.length * key));
+      //   }
+      // }
+      // chunk(arr, 3);
+
+      // console.log(total,arr.length);
+      
+
+    // 2) compact
+
+//     let arr=[1,2,"s",3,4,];
+//      let result=[];    
+    
+//     function compact(arr){
+//      let falseArr=[]
+//       for(let i=0; i<arr.length;i++){
+//         if(arr[i]){
+//           result.push(arr[i]);   
+//         }
+//         else{
+//           falseArr.push(arr[i]);
+//         }
+//       }
+// console.log(falseArr,falseArr.length?'false':'true');
+
+// for(let i=0; i<arr.length;i++){
+//         if(!arr[i]){
+//           result.push(arr[i]);   
+//         }
+//       }
+// console.log(result.length);
+
+
+      // arr.forEach(element => {
+      //   if(element){
+      //     arr.push(element);
+      //   }
+      // });
+
+
+    //   let truthyArr=arr.filter(el=>el && el);
+    //   // let truthyArr=arr.filter(el=>{if(el){return el}});
+    //   console.log(truthyArr);
+      
+    // }
+
+    // 3)difference
+    // input
+
+//     let arr=[10,5,4,5,3,2];
+//     let arr1=[10,5,3];
+
+//     // output
+//         let arr2=[];
+//     // [4,2]
+
+//     function difference(arr,arr1){
+//       for(let i=0; i<arr.length; i++){
+//         // console.log(arr[i]);
+//         if(!arr1.includes(arr[i])){
+//           arr2.push(arr[i]);
+//         } 
+//       }
+//       // let array=arr.filter(ele=>!arr1.includes(ele));
+//       // console.log(array);
+//     }
+// difference(arr,arr1);
+// console.log(arr2);
+
+
+// 4)drop
+
+  // input
+  // let arr=[1,2,3];
+  // let n=2;
+  // output
+  // [3]
+//   let result=[];
+
+//   function drop(arr,n){
+//    result.push(arr.splice(n));
+//     // console.log();  
+//   }
+// drop(arr,n);
+// console.log(result);
+
+// console.log(result);
+
+// 5)findindex
+
+// Input
+// let arr=['a','b','c','d'];
+// let index='c';
+
+// // output
+
+// // index number (2)
+
+// function findIndex(arr,index){
+//   // let result=arr.join('');
+//   let str=arr.indexOf(index);
+//   console.log(str);
+// }
+// findIndex(arr,index)
+
+
+// 6)join
+// input
+// let arr=['a','b','c','d'];
+// let separator='*';
+// output
+// a*b*c*d
+
+// function join(arr,separator){
+//  let result=arr.join(separator);
+//  console.log(result);
+// }
+// join(arr,separator);
+ 
+
+// 7)remove
+// input
+// let arr=['a','b','c','d'];
+// let index=2;
+
+// output
+// ['a','b','d']
+
+// function remove(arr,index){
+//   arr.splice(index,1);
+//   console.log(arr);
+// }
+// remove(arr,index);
+
+// 8)union
+
+// let arr=[2,3,4,5,6];
+// let arr1=[1,2,3,4];
+// let result=arr1;
+// function union(arr,arr1){
+  //   for(let j=0;j<arr.length;j++){
+  //     if(!arr1.includes(arr[j])){
+  //       arr1.push(arr[j]);
+        
+  //     }     
+  // }
+  // console.log(arr1);
+
+// method 2
+
+// let difference=arr1.filter(ele=>!arr.includes(ele));
+
+// return [...difference,...arr]
+
+// }
+// console.log(union(arr,arr1));
+
+
+
+// 9)every
+
+// // input=>[true,1,null,'yes'];
+// let givenArr=[true,1,'yes',2,3,''];
+// let result=[];
+// // let every= Boolean;
+// function every(givenArr){
+
+  // method 1
+
+  // return  givenArr.every(el=>el);
+
+  // method 2
+
+//  let falseArr=[];
+//   for(let i=0; i<givenArr.length; i++){
+//     if(givenArr[i]){
+//       result.push(givenArr[i]);
+//     }
+//     else{
+//       falseArr.push(givenArr[i]);
+//     }
+//   }
+// console.log(falseArr,falseArr.length ? "false" :"true");
+
+// method 3
+
+// for(let i=0; i<givenArr.length; i++){
+
+//     if(!givenArr[i]){
+//       result.push(givenArr[i]);
+//     }
+//   }
+//   console.log(result,result.length?false:true);
+  
+// }
+// every(givenArr);
+
+
+
+// 10)filter
+
+//   let givenUser=[
+//     {"user":'barney',age:36,active:true},
+//     {"user":'fred',age:40,active:false}
+//   ];
+//   let value=[];
+//   let givenKey={age:36,active:true};
+//   givenUser.filter(ele=>{
+//     if(ele.active==givenKey.active){
+//       value.push(ele.user)
+      
+//     }
+//   });
+// console.log(value);
+
+  
+  // console.log(Object.keys(result).length);
+  // console.log(result.user);
+  
+
+  
+
+// 11)size
+
+// let givenArr=[1,2,3,4,5];
+// function size(givenArr){
+// let result=  givenArr.length
+// console.log(result);
+// }
+// size(givenArr)
+
+// 12)ceil
+
+// let givenArr=6.004;
+// let key=2;
+
+// console.log(Math.round(givenArr).toFixed(key));
+
+
+// function ceil(givenArr){
+//   let result= Math.floor(givenArr).toFixed(key);
+//   console.log(result);
+// }
+// ceil(givenArr);
+
+// 13)max
+// let givenArr=[4,2,6,8];
+
+
+// function max(givenArr){
+//   // givenArr.join('');
+//   // let result=Math.max(givenArr.join(''));
+//   let result=givenArr.sort((a,b)=>a-b);
+//   let arr= result[result.length-1];
+// //  let arr= Math.max(result);
+// //   console.log(arr);
+// console.log(arr);
+
+// }
+// max(givenArr);
+
+// 14)mean
+
+// let givenArr=[4,2,6,8];
+
+// function mean(givenArr){
+//   let result=givenArr.reduce((a,b)=>a+b);
+//   console.log(result/givenArr.length);
+  
+// }
+// mean(givenArr)
+
+// 15)
+
+// let givenArr=[1,8,9,30,20,10];
+// let givenArr1=[1,10,8];
+// let result=[];
+// function omit(givenArr,givenArr1){
+//   for(let i=0; i < givenArr.length; i++){
+// // console.log(givenArr[i]);
+// if(!givenArr1.includes(givenArr[i])){
+//   result.push(givenArr[i]);
+  
+// }
+
+// }
+// console.log(result);
+
+// }
+// omit(givenArr,givenArr1)
+
+    </script>
+  </body>
+</html>
